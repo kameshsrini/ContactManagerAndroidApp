@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+
+    
+   >
+   <LinearLayout
+       android:id="@+id/listitem_layout"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" 
+      android:orientation="vertical"
+      android:layout_marginTop="4dp"
+      android:layout_marginBottom="4dp"
+      android:layout_marginLeft="6dp"
+      android:layout_marginRight="6dp" >
+      
+    <TextView
+        android:id="@+id/name"
+        android:text=""
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:textSize="20dp" />
+    
+    <TextView
+        android:id="@+id/number"
+        android:text=""
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7f7f7f"
+        android:textStyle="normal"
+        android:textSize="15dp"
+        android:gravity="right"/>
+     </LinearLayout>
+    
+</RelativeLayout>
+
+

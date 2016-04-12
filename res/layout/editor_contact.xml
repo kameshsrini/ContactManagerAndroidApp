@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal">
+    <Button 
+        android:id="@+id/saveButton" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:text=" ✓ SAVE "
+        android:background="@drawable/mydynamicbutton"
+        android:textColor="#04145b">
+    </Button>
+    <Button 
+        android:id="@+id/cancelButton" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:text="✗ CANCEL"
+        android:background="@drawable/mydynamicbutton"
+        android:textColor="#04145b">
+    </Button>
+     </LinearLayout>
+     
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    
+    
+
+    <EditText
+        android:id="@+id/fnameText"
+        android:maxLength="30"
+        android:textSize="17sp"
+        android:hint="First Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/lnameText"
+        android:maxLength="30"
+        android:textSize="17sp"
+        android:hint="Last Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="4dp"
+        android:ems="10" />
+    
+     <TextView
+         android:id="@+id/textView2"
+         android:textSize="17sp"
+         android:layout_width="fill_parent"
+         android:layout_height="25dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/textviewback"
+         android:textColor="#04145b"
+         android:text="PHONE" />
+
+    <EditText
+        android:id="@+id/phoneText"
+        android:maxLength="15"
+        android:textSize="17sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="phone" />
+    
+     <TextView
+         android:id="@+id/textView3"
+         android:maxLength="50"
+         android:textSize="17sp"
+         android:layout_width="fill_parent"
+         android:layout_height="25dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/textviewback"
+         android:textColor="#04145b"
+         android:text="EMAIL" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:textSize="17sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+</LinearLayout>
+</LinearLayout>
